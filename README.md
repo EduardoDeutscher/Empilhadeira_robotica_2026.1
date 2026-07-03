@@ -11,9 +11,23 @@ Prof. João Ricardo | Turma 3VA
 
 ## Descrição do Projeto
 
-Empilhadeira robótica autônoma capaz de localizar paletes por meio de visão computacional (AprilTags), aproximar-se autonomamente utilizando o algoritmo Pure Pursuit e elevar a carga com um garfo motorizado. O sistema também suporta operação manual completa via dashboard web, acessível por qualquer dispositivo na mesma rede Wi-Fi.
+Empilhadeira robótica autônoma capaz de localizar paletes por meio de visão computacional utilizando AprilTags. O sistema realiza uma busca ativa por uma tag específica e, ao identificá-la, utiliza o algoritmo Pure Pursuit para se locomover autonomamente até o objetivo. Além do modo autônomo, o robô suporta operação manual completa, permitindo o controle em tempo real da movimentação e do garfo motorizado para elevação da carga. A transição entre os modos e o controle manual são realizados via dashboard web, acessível por qualquer dispositivo conectado à mesma rede Wi-Fi.
 
 ## Arquitetura do Sistema
+
+Câmera → Raspberry Pi → Serial UART → Arduino Mega → Ponte H → Motores LEGO (tração)
+→ A4988   → NEMA 17    (garfo)
+
+↕
+
+Dashboard Web
+(celular / notebook)
+
+O Raspberry Pi é responsável por toda a lógica de alto nível:
+visão computacional, máquina de estados e servidor web.
+O Arduino Mega executa apenas os comandos recebidos,
+acionando os motores em tempo real.
+
 
 ## Hardware Necessário 
 
