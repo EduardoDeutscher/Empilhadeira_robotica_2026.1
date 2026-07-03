@@ -1,0 +1,1 @@
+# Empilhadeira_rob-tica_2026.1
