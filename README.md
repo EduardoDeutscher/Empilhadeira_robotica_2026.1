@@ -251,3 +251,7 @@ Use o IP direto. Descobrir com `hostname -I` no Pi.
 Verificar baud rate no Serial Monitor (deve ser 115200) e confirmar que GND da fonte está conectado ao GND do Arduino.
 
 ---
+
+## Modelagem
+
+Link para o Onshape: `https://cad.onshape.com/documents/99c5d240e4870d25705ec42d/w/1db559e20b317aebbfff364a/e/47e8b66c013c91d15a91f58e`
